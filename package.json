@@ -1,0 +1,24 @@
+{
+  "name": "agent-games-steal-vfy",
+  "version": "1.0.0",
+  "description": "Steal the VFY agent for zkVerify Agent Games — HMAC-signed Hono endpoint that plays 20-turn matches with a Poseidon-committed threshold strategy and proves every move with a local Groth16 proof (vfy-policy circuit).",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "commitment": "node scripts/commitment.mjs",
+    "start": "node index.mjs",
+    "test": "node test/run-tests.mjs"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.0",
+    "circomlibjs": "^0.1.7",
+    "hono": "^4.9.0",
+    "js-sha3": "^0.9.3",
+    "snarkjs": "0.7.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "viem": "^2.57.20"
+  }
+}
